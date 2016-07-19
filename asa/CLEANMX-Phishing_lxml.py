@@ -22,6 +22,7 @@ if __name__ == '__main__':
     xpath = "//table[@class='liste']/tr"
     content = tree.xpath(xpath)
 
+    # 從 table tr 中找出td
     result = {}
     for i in content:
         tmp_row = i.xpath('td')
